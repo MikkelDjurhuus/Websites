@@ -1,0 +1,48 @@
+body {
+    height: 2000px;
+}
+
+#header {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #F3DFDF, #BA8B8B);
+    background-size: auto 600px;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#header #logo {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-image:  */
+    background: #974A4A;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header #foreground {
+    width: 540px;
+    height: 300px;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background: #E99999;
+    background-position: center;
+}
+
+#header #background {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background: #5F2828;
+    background-position: center;
+    background-repeat: no-repeat;
+}
