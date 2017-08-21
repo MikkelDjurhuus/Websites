@@ -1,12 +1,14 @@
 body {
     height: 2000px;
+    max-width: 960px;
+    margin: auto;
 }
 
 #header {
     height: 600px;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, #F3DFDF, #BA8B8B);
+    background-image: linear-gradient( to bottom, #F3DFDF, #BA8B8B);
     background-size: auto 600px;
     background-position: top center;
     background-attachment: fixed;
@@ -19,7 +21,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     /* background-image:  */
-    background: #974A4A;
+    background: rgba(151, 74, 74, 0.24);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -31,7 +33,7 @@ body {
     left: 80%;
     top: 80%;
     transform: translate(-50%, -50%);
-    background: #E99999;
+    background: rgba(233, 153, 153, 0.27);
     background-position: center;
 }
 
@@ -42,7 +44,63 @@ body {
     left: 20%;
     top: 20%;
     transform: translate(-50%, -50%);
-    background: #5F2828;
+    background: rgba(95, 40, 40, 0.25);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+section {
+    height: 400px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+}
+
+section.fixed {
+    background-image: linear-gradient( to bottom, #E3CCCC, #C57070);
+    background-size: auto;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+section .content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-image:  */
+    /* background: rgba(206, 149, 149, 0.09); */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.transition{
+    height: 90px;
+    background-size: 100% 308px;
+}
+.red-in{
+    background-image: url("./white-red.png");
+}
+
+.red{
+    /* background-image: url("./red-white.png"); */
+    background: #ed1c24;
+}
+
+.red-out{
+    background-image: url("./red-white.png");
+}
+
+.content .item{
+    width: 200px;
+    height: 200px;
+    background:#FFCDCD;
 }
